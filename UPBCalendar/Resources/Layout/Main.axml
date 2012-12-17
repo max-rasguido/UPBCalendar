@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="fill_parent"
+    p1:layout_height="fill_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:background="@android:color/white">
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="fill_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/relativeLayout2">
+        <ImageView
+            p1:src="@drawable/UPB"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/UPBLogo"
+            p1:layout_alignParentLeft="true"
+            p1:layout_margin="2dp" />
+        <TextView
+            p1:text="UPB Calendar"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/AppTitle"
+            p1:layout_below="@id/UPBLogo"
+            p1:layout_centerHorizontal="true"
+            p1:textColor="#3B3477" />
+        <ImageView
+            p1:src="@drawable/ISC"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/ISCLogo"
+            p1:layout_alignParentRight="true"
+            p1:layout_margin="2dp"
+            p1:layout_above="@id/AppTitle" />
+    </RelativeLayout>
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/BottomBar"
+        p1:layout_alignParentBottom="true"
+        p1:background="#3B3477"
+        p1:gravity="center_horizontal">
+        <TextView
+            p1:text="Inicio de Clases: 4 de Febrero"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:textColor="@android:color/white" />
+    </LinearLayout>
+    <ListView
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_below="@id/relativeLayout2"
+        p1:layout_above="@id/BottomBar"
+        p1:layout_width="fill_parent"
+        p1:layout_height="fill_parent"
+        p1:id="@+id/EventList" />
+</RelativeLayout>
